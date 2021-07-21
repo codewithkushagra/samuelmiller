@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+html, body{
+    overflow:hidden;
+    height:100%;
+}
+
+
+.background{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    cursor: pointer;
+}
+
+.noob{
+    font-size: 16vw;
+    display:flex;
+    font-family: 'VT323', monospace;
+    
+}
+
+.noob a{
+    cursor: pointer;
+}
+
+#loading {
+    -webkit-animation: rotation 1.2s 1 ;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+.sam{
+    color:rgb(207, 207, 207);font-size:3vw;letter-spacing: 5px;font-family: 'Encode Sans SC', sans-serif;cursor: pointer;
+}
+
+.glow {
+    font-size: 16vw;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+    z-index: 100;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+li
+{
+    margin: 0 0 20px 0; 
+}
+
+.system{
+    color: rgba(146, 210, 253, 0.815);
+}
+.fact{
+    padding-bottom: 130px;padding-top: 1vw;font-size: 1.5vw;
+}
+
+.typing-demo {
+    width: 100%;
+    animation: typing 2s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.footer{
+    display:flex;color:white;justify-content: space-around;width:50%;margin:20px;padding-bottom: 30px;font-family: 'Encode Sans SC', sans-serif;
+}
+
+@media only screen and (max-width:1150px){
+
+    .glow{
+        font-size:19vw;
+    }
+    .noob{
+        font-size:19vw;
+    }
+
+    .sam{
+        font-size:4vw;
+    }
+    .fact{
+        font-size: 2.1vw
+    }
+}
+
+@media only screen and (max-width:620px){
+    .footer{
+        width:100%;
+    }
+
+}
+
+@media only screen and (max-width:480px){
+
+    .glow{
+        font-size:23vw;
+    }
+    .noob{
+        font-size:23vw;
+    }
+    .sam{
+        font-size:7vw;
+    }
+    .fact{
+        font-size: 3vw
+    }
+    
+
+}
+

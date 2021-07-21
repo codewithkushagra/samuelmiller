@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small pp guy</title>
+</head>
+<body>
+    <div class="background">
+        <div  class="sam" onclick="homepage()">Samuel Miller</div>
+        <div style="color:white;display:flex;flex-direction:column;" id="home">
+            <div class="noob"><a class="glow" id="textToRotate" onclick="rotate()">N</a>ooB Coder</div>
+            <div class="fact" id="fact"></div>
+        </div>
+
+        <div style="display:none;color:white;justify-content:center;align-items:center;"id="about">
+            <div style="width:13vw;margin-right: 50px;">
+                <img src="images/mainpp.jpeg" width="100%">
+            </div>
+            <div class="container" style="text-align:left;">
+                <ol style="list-style:none;font-size:x-large;font-family: 'Yomogi', cursive;">
+                    <li>My favorite learning platform is whitehat Jr </li>
+                    <li>My crush is Chintu</li>
+                    <li>I have a small PP</li>
+                    <li>I am a virgin noob coder bitch</li>
+                    <li>I love Hentai</li>
+                    <li>And I also do it fast, cause that how they like it...</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div><a href="https://www.xv-horezeedipaif.com/video27376567/straight_chubby_guy_fucks_busty_chick" target="_blank">MY VIDEO</a></div>
+            <div><a onclick="remove(1)">ABOUT ME</a></div>
+            <div><a onclick="remove(0)">MY SHIT</a></div>
+        </div>
+
+    </div>
+<script>
+    var count=0;
+    function rotate()
+    {
+        if(count%2==0)
+        {
+            document.getElementById('textToRotate').innerHTML=`<div id='loading'>B</div>`
+            var audio = new Audio('yamete.mp3');
+            audio.play();
+            document.getElementById('fact').innerHTML=`<p class="typing-demo"><b style="color:red">*Fact:</b> System.out.println(<i class="system">"I am a bitch, my PP is small and I am a virgin"</i>);</p>`
+        }
+        else
+        {
+            document.getElementById('textToRotate').innerHTML=`<div id='loading'>N</div>`
+            document.getElementById('fact').innerHTML=``
+
+        }
+        count++;
+    }
+    function homepage()
+    {
+        document.getElementById("about").style.display="none"
+        document.getElementById("home").style.display="flex"
+    }
+    function remove(check)
+    {
+        document.getElementById("home").style.display="none"
+        if (check)
+        {
+            
+            document.getElementById("about").style.display="flex"
+        }
+        else
+        {
+            document.getElementById("about").style.display="none"
+        }
+    }
+</script>
+
+</body>
+</html>
