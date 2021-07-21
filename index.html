@@ -37,6 +37,11 @@
             </div>
         </div>
 
+        <div style="display: none" id="shit">
+            
+            <img src="images/eatingbanana.jpeg" height="40%">
+        </div>
+
         <div class="footer">
             <div><a href="https://www.xv-horezeedipaif.com/video27376567/straight_chubby_guy_fucks_busty_chick" target="_blank">MY VIDEO</a></div>
             <div><a onclick="remove(1)">ABOUT ME</a></div>
@@ -70,6 +75,7 @@
             count++;
         }
         rotate()
+        document.getElementById("shit").style.display="none"
         document.getElementById("about").style.display="none"
         document.getElementById("home").style.display="flex"
     }
@@ -78,12 +84,13 @@
         document.getElementById("home").style.display="none"
         if (check)
         {
-            
+            document.getElementById("shit").style.display="none"
             document.getElementById("about").style.display="flex"
         }
         else
         {
             document.getElementById("about").style.display="none"
+            document.getElementById("shit").style.display="flex"
         }
     }
 </script>
