@@ -153,6 +153,12 @@
             count++;
         }
         rotate()
+        document.getElementById("shit").innerHTML=`<div style="display:flex;color:white;align-items:center;justify-content:center;">
+                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(0)">&#60</div>
+                <img src="images/eatingbanana.jpeg" class="bananaimg">
+                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(1)">&#62</div>
+            </div>
+            <p class="bananatext">I wanna eat your banana you little bitch... Give it to me I am worth it</p>`
         document.getElementById("shit").style.display="none"
         document.getElementById("about").style.display="none"
         document.getElementById("home").style.display="flex"
@@ -162,11 +168,23 @@
         document.getElementById("home").style.display="none"
         if (check)
         {
+            document.getElementById("shit").innerHTML=`<div style="display:flex;color:white;align-items:center;justify-content:center;">
+                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(0)">&#60</div>
+                <img src="images/eatingbanana.jpeg" class="bananaimg">
+                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(1)">&#62</div>
+            </div>
+            <p class="bananatext">I wanna eat your banana you little bitch... Give it to me I am worth it</p>`
             document.getElementById("shit").style.display="none"
             document.getElementById("about").style.display="flex"
         }
         else
         {
+            document.getElementById("shit").innerHTML=`<div style="display:flex;color:white;align-items:center;justify-content:center;">
+                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(0)">&#60</div>
+                <img src="images/eatingbanana.jpeg" class="bananaimg">
+                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(1)">&#62</div>
+            </div>
+            <p class="bananatext">I wanna eat your banana you little bitch... Give it to me I am worth it</p>`
             document.getElementById("about").style.display="none"
             document.getElementById("shit").style.display="flex"
         }
