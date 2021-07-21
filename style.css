@@ -87,6 +87,14 @@ li
     margin: 0 0 20px 0; 
 }
 
+.bananaimg{
+    height:18vw;
+}
+
+.bananatext{
+    color:white;padding: 20px 0;font-size:x-large;font-family: 'Yomogi', cursive;
+}
+
 .system{
     color: rgba(146, 210, 253, 0.815);
 }
@@ -138,13 +146,18 @@ li
     .mainppimg{
         display:none;
     }
-
+    .bananaimg{
+        height:24vw;
+    }
 
 }
 
 @media only screen and (max-width:620px){
     .footer{
         width:100%;
+    }
+    .bananaimg{
+        height:40vw;
     }
 
 }
@@ -163,7 +176,9 @@ li
     .fact{
         font-size: 2.5vw;
     }
-    
+    .bananatext{
+        font-size:large;
+    }
 
 }
 

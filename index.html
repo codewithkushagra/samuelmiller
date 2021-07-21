@@ -40,11 +40,11 @@
         <div style="display: none;flex-direction: column;" id="shit">
 
             <div style="display:flex;color:white;align-items:center;justify-content:center;">
-                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;">&#60</div>
-                <img src="images/eatingbanana.jpeg" style="height:18vw">
-                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;">&#62</div>
+                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(0)">&#60</div>
+                <img src="images/eatingbanana.jpeg" class="bananaimg">
+                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(1)">&#62</div>
             </div>
-            <p style="color:white;padding: 20px 0;font-size:x-large;font-family: 'Yomogi', cursive;">I wanna eat your banana</p>
+            <p class="bananatext">I wanna eat your banana</p>
         </div>
 
         <div class="footer">
@@ -56,6 +56,67 @@
     </div>
 <script>
     var count=0;
+    var currentimg=1;
+    function changeimg(operation)
+    {
+        if(operation)
+        {
+            if(currentimg<3)
+            {
+                currentimg++;
+            }
+            else
+            {
+                currentimg=1;
+            }
+        }
+        else
+        {
+            if(currentimg>1)
+            {
+                currentimg--;
+            }
+            else
+            {
+                currentimg=3;
+            }
+        }
+        console.log(currentimg)
+        if(currentimg==1)
+        {
+            document.getElementById("shit").innerHTML=`<div style="display:flex;color:white;align-items:center;justify-content:center;">
+                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(0)">&#60</div>
+                <img src="images/eatingbanana.jpeg" class="bananaimg">
+                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(1)">&#62</div>
+            </div>
+            <p class="bananatext">I wanna eat your banana</p>`
+        }
+        else if(currentimg==2)
+        {
+            document.getElementById("shit").innerHTML=`
+            <div style="display:flex;color:white;align-items:center;justify-content:center;">
+                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(0)">&#60</div>
+                <img src="images/whatgoat.jpeg" class="bananaimg">
+                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(1)">&#62</div>
+            </div>
+            <p class="bananatext">I wanna eat your banana</p>`
+        }
+        else
+        {
+            document.getElementById("shit").innerHTML=`
+            <div style="display:flex;color:white;align-items:center;justify-content:center;">
+                <div style="margin-right: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(0)">&#60</div>
+                <img src="images/withcartoon.jpeg" class="bananaimg">
+                <div style="margin-left: 20px;font-size:4vw;cursor: pointer;"onclick="changeimg(1)">&#62</div>
+            </div>
+            <p class="bananatext">I wanna eat your banana</p>`
+        }
+
+    }
+
+
+
+
     function rotate()
     {
         if(count%2==0)
