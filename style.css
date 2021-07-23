@@ -160,6 +160,7 @@ li
     .bananaimg{
         height:24vw;
     }
+    
 
 }
 
@@ -169,6 +170,17 @@ li
     }
     .bananaimg{
         height:40vw;
+    }
+    .y:hover{
+        color:white;
+    }
+    
+    .tw:hover{
+        color:white;
+    }
+    
+    .ins:hover{
+        color:white;
     }
 
 }
