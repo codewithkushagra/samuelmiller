@@ -13,6 +13,17 @@ html, body{
     height:100%;
 }
 
+.y:hover{
+    color:rgb(224, 138, 138);
+}
+
+.tw:hover{
+    color:rgb(138, 221, 224);
+}
+
+.ins:hover{
+    color:rgb(224, 138, 185);
+}
 
 .background{
     display:flex;
